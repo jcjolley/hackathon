@@ -121,7 +121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 111911640}
   m_Layer: 0
-  m_Name: Floa (4)
+  m_Name: Log (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -348,7 +348,7 @@ GameObject:
   m_Component:
   - component: {fileID: 625862558}
   m_Layer: 0
-  m_Name: Playa
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -463,7 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 835707325}
   m_Layer: 0
-  m_Name: Floa (2)
+  m_Name: Log (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,7 +591,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1124561660}
   m_Layer: 0
-  m_Name: Floa (3)
+  m_Name: Log (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,7 +620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1418461552}
   m_Layer: 0
-  m_Name: Floa
+  m_Name: Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,7 +748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1650309694}
   m_Layer: 0
-  m_Name: Floa (1)
+  m_Name: Log (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -957,7 +957,7 @@ GameObject:
   - component: {fileID: 1851283625}
   - component: {fileID: 1851283624}
   m_Layer: 0
-  m_Name: udda floa
+  m_Name: Stone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1004,7 +1004,7 @@ GameObject:
   - component: {fileID: 2000328555}
   - component: {fileID: 2000328553}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Flame Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1123,4 +1123,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 385124d70cdbd8441b0413b73695babb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
+  verticalSpeed: 10
+  horizontalSpeed: 2
+  maxHorizontalSpeed: 100
+  movement: {x: 0, y: 0}
+  isJump: 0
