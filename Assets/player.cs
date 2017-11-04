@@ -4,53 +4,53 @@ using UnityEngine;
 
 public class player : MonoBehaviour {
 
-    public float verticalSpeed = 10; //Floating point variable to store the player's movement speed.
-    public float horizontalSpeed = 2;
-    public float maxHorizontalSpeed = 100;
-    public Vector2 movement;
-    public bool isJump = false;
-    private Rigidbody2D rb2d;       //Store a reference to the Rigidbody2D component required to use 2D Physics.
+    public float verticalSpeed = 5;
+    public float horizontalSpeed = 10;
+    private bool jumping = false;
+    private float lastHorizontal = 0;
+    private Rigidbody2D rb2d;
 
-    // Use this for initialization
-    void Start()
+    public void Start()
     {
-        //Get and store a reference to the Rigidbody2D component so that we can access it.
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    //FixedUpdate is called at a fixed interval and is independent of frame rate. Put physics code here.
-    void Update()
+    public void Update()
     {
-        //Store the current horizontal input in the float moveHorizontal.
         float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical;
-        //Store the current vertical input in the float moveVertical.
-
-        if(!isJump)
+        float moveVertical = Input.GetAxis("Vertical");
+        Vector2 velocity = rb2d.velocity;
+        if (System.Math.Abs(moveHorizontal) < System.Math.Abs(lastHorizontal))
         {
-            moveVertical = Input.GetAxis("Vertical");
-            isJump = true;
-        } else
-        {
-            moveVertical = 0;
+            print("Stop");
+            velocity.x = 0;
         }
-      
-        if(isJump && rb2d.velocity.y == 0)
+        if (moveHorizontal > 0)
         {
-            isJump = false;
-        }         
-
-        if (System.Math.Abs(rb2d.velocity.x) > maxHorizontalSpeed)
+            velocity.x = horizontalSpeed;
+        } else if (moveHorizontal < 0)
         {
-            moveHorizontal = 0;
-        } 
-
-        //Use the two store floats to create a new Vector2 variable movement.
-        movement = new Vector2(moveHorizontal * horizontalSpeed, moveVertical * verticalSpeed);
-
-        //Call the AddForce function of our Rigidbody2D rb2d supplying movement multiplied by speed to move our player.
-        print("Movement is:" + movement);
-        rb2d.AddForce(movement);
+            velocity.x = -horizontalSpeed;
+        }
+        lastHorizontal = moveHorizontal;
+        
+        if (moveVertical > 0)
+        {
+            if (!jumping)
+            {
+                velocity.y = verticalSpeed;
+                jumping = true;
+            }
+        }
+        if (rb2d.velocity.y == 0)
+        {
+            jumping = false;
+        }
+        rb2d.velocity = velocity;
+    }
+    
+    void FixedUpdate()
+    {
         
     }
 }
