@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 448107325}
   - component: {fileID: 448107324}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Log Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -251,7 +251,7 @@ GameObject:
   - component: {fileID: 527370274}
   - component: {fileID: 527370275}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Log Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,7 +379,7 @@ GameObject:
   - component: {fileID: 629248824}
   - component: {fileID: 629248825}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Stone Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 1116581164}
   - component: {fileID: 1116581163}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Log Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -651,7 +651,7 @@ GameObject:
   - component: {fileID: 1618572573}
   - component: {fileID: 1618572572}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Log Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -859,7 +859,7 @@ GameObject:
   - component: {fileID: 1789483815}
   - component: {fileID: 1789483814}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Log Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
