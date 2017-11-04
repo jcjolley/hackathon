@@ -1223,4 +1223,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   verticalSpeed: 10
-  horizontalSpeed: 5
+  horizontalSpeed: 8
