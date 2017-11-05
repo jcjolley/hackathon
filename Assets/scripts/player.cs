@@ -8,10 +8,12 @@ public class player : MonoBehaviour
     public float verticalSpeed = 5;
     public float horizontalSpeed = 10;
     private Rigidbody2D rb2d;
-
+    private BoxCollider2D myCollider;
     public void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
+        myCollider = GetComponent<BoxCollider2D>();
+        
     }
 
     public void Update()
@@ -35,8 +37,9 @@ public class player : MonoBehaviour
         {
             velocity.y = verticalSpeed;
         }
-
+        
         rb2d.velocity = velocity;
+        handleCollisions();
     }
 
     private bool onGround()
@@ -44,4 +47,19 @@ public class player : MonoBehaviour
         return rb2d.velocity.y == 0; // TODO: Replace with collision check. 
     }
 
+    private void handleCollisions()
+    {
+        Collider2D[] circleCollisions = new Collider2D[10];
+        myCollider.GetContacts(circleCollisions);
+
+        foreach(Collider2D collision in circleCollisions)
+        {
+            print("We collided with something!");
+            if(collision && collision.gameObject.CompareTag("flammablePlatform"))
+            {
+                print("Collided with: " + collision);
+                collision.GetComponent<Burnable>().burn();
+            }
+        }
+    }
 }
