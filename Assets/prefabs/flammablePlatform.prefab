@@ -9,69 +9,69 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1908386452570506}
+  m_RootGameObject: {fileID: 1546065953200704}
   m_IsPrefabParent: 1
---- !u!1 &1908386452570506
+--- !u!1 &1546065953200704
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4962648441908262}
-  - component: {fileID: 212884883966282438}
-  - component: {fileID: 61399054860636336}
+  - component: {fileID: 4258821829474438}
+  - component: {fileID: 212333782688417832}
+  - component: {fileID: 61620314537183232}
   m_Layer: 0
-  m_Name: platform
-  m_TagString: nonflammablePlatform
+  m_Name: flammablePlatform
+  m_TagString: flammablePlatform
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4962648441908262
+--- !u!4 &4258821829474438
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1908386452570506}
-  m_LocalRotation: {x: -0, y: -0, z: -0.18340227, w: 0.98303795}
-  m_LocalPosition: {x: -3.97, y: 0.04, z: 0}
-  m_LocalScale: {x: 1.2410234, y: 0.85310096, z: 1}
+  m_GameObject: {fileID: 1546065953200704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.04, y: 1.01, z: 0}
+  m_LocalScale: {x: 4.595043, y: 2.7683797, z: 1.2315984}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.136002}
---- !u!61 &61399054860636336
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &61620314537183232
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1908386452570506}
+  m_GameObject: {fileID: 1546065953200704}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.015941858, y: 0.009512782}
+  m_Offset: {x: 0.0063018203, y: 0.0069274753}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.4, y: 1.5}
-    newSize: {x: 6.4, y: 4.8}
+    oldSize: {x: 1.66, y: 0.4}
+    newSize: {x: 1.66, y: 0.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.1281943, y: 1.2598007}
+  m_Size: {x: 1.628151, y: 0.37270084}
   m_EdgeRadius: 0
---- !u!212 &212884883966282438
+--- !u!212 &212333782688417832
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1908386452570506}
+  m_GameObject: {fileID: 1546065953200704}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -100,12 +100,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 486433e4dd127694f911e89549c083b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 418ab5c27d3054eb89959d9c715e00c9, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 6.4, y: 4.8}
+  m_Size: {x: 1.66, y: 0.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
