@@ -78,6 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e034e748d64bfef4399e98fe722e7843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  burnThreshhold: 3
 --- !u!212 &212693260911572678
 SpriteRenderer:
   m_ObjectHideFlags: 1
