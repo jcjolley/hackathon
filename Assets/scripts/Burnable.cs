@@ -16,8 +16,11 @@ public class Burnable : MonoBehaviour
     void Update()
     {
         if (this.burning)
+        {
             this.burningCount += 1 * Time.deltaTime;
-        print(this.burningCount);
+            print("Burning Couint:" + this.burningCount);
+        }
+
         if (this.burningCount > burnThreshhold)
         {
             Destroy(gameObject);

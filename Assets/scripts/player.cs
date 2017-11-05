@@ -54,10 +54,13 @@ public class player : MonoBehaviour
 
         foreach(Collider2D collision in circleCollisions)
         {
-            print("We collided with something!");
+            if (collision)
+            {
+                print("Collided with a thing: " + collision.gameObject.name);
+            }
             if(collision && collision.gameObject.CompareTag("flammablePlatform"))
             {
-                print("Collided with: " + collision);
+                print("Collided with: " + collision + "burning now.");
                 collision.GetComponent<Burnable>().burn();
             }
         }
